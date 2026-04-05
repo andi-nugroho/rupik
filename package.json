@@ -1,5 +1,5 @@
 {
-  "name": "reiatsu",
+  "name": "rupik",
   "version": "1.3.0",
   "description": "A minimal TypeScript HTTP server framework, built from first principles.",
   "keywords": [
@@ -12,13 +12,13 @@
     "middleware",
     "microframework"
   ],
-  "homepage": "https://github.com/andi-nugroho/reiatsu#readme",
+  "homepage": "https://github.com/andi-nugroho/rupik#readme",
   "bugs": {
-    "url": "https://github.com/andi-nugroho/reiatsu/issues"
+    "url": "https://github.com/andi-nugroho/rupik/issues"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/andi-nugroho/reiatsu.git"
+    "url": "git+https://github.com/andi-nugroho/rupik.git"
   },
   "license": "MIT",
   "author": "Andi Nugroho",
@@ -50,8 +50,5 @@
   },
   "peerDependencies": {
     "typescript": ">=4.5"
-  },
-  "dependencies": {
-    "reiatsu": "^1.3.0"
   }
 }

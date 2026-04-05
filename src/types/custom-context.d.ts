@@ -7,7 +7,7 @@ import { UploadedFile } from "./http";
  *
  * @example
  * ```typescript
- * import { AuthContext } from "@reiatsu/types";
+ * import { AuthContext } from "@rupik/types";
  *
  * const handler = (ctx: Context & AuthContext) => {
  *   if (ctx.isAuthenticated) {
@@ -27,7 +27,7 @@ export interface AuthContext {
  *
  * @example
  * ```typescript
- * import { RequestIdContext } from "@reiatsu/types";
+ * import { RequestIdContext } from "@rupik/types";
  *
  * const handler = (ctx: Context & RequestIdContext) => {
  *   console.log(ctx.requestId);
@@ -44,7 +44,7 @@ export interface RequestIdContext {
  *
  * @example
  * ```typescript
- * import { UploadContext } from "@reiatsu/types";
+ * import { UploadContext } from "@rupik/types";
  *
  * const handler = (ctx: Context & UploadContext) => {
  *   ctx.files?.forEach(file => {
@@ -63,7 +63,7 @@ export interface UploadContext {
  *
  * @example
  * ```typescript
- * import { BodyContext } from "@reiatsu/types";
+ * import { BodyContext } from "@rupik/types";
  *
  * const handler = (ctx: Context & BodyContext) => {
  *   const data = ctx.body as MyBodyType;

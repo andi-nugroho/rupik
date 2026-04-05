@@ -1,8 +1,12 @@
-# Reiatsu
+<p align="center">
+  <img src="./public/assets/rupik-logo.png" alt="Rupik Logo" width="200"/>
+</p>
 
-![npm](https://img.shields.io/npm/v/reiatsu)
-![npm](https://img.shields.io/npm/dm/reiatsu)
-![GitHub stars](https://img.shields.io/github/stars/andi-nugroho/reiatsu?style=flat-square&color=ff69b4)
+# Rupik
+
+![npm](https://img.shields.io/npm/v/rupik)
+![npm](https://img.shields.io/npm/dm/rupik)
+![GitHub stars](https://img.shields.io/github/stars/andi-nugroho/rupik?style=flat-square&color=ff69b4)
 ![Zero Dependencies](https://img.shields.io/badge/Dependencies-Zero-ff69b4?style=flat-square)
 ![TypeScript](https://img.shields.io/badge/TypeScript-First-ff69b4?style=flat-square)
 
@@ -11,11 +15,11 @@ A minimal, type-safe HTTP framework for Node.js built from first principles usin
 ## Quick Start
 
 ```bash
-npm i reiatsu
+npm i rupik
 ```
 
 ```typescript
-import { router, serve } from "reiatsu";
+import { router, serve } from "rupik";
 
 router.get("/", (ctx) => {
   ctx.json({ message: "Hello, World!" });
@@ -64,7 +68,7 @@ serve(3000);
 ### Basic Server
 
 ```typescript
-import { router, serve, use } from "reiatsu";
+import { router, serve, use } from "rupik";
 
 // Add global middleware
 use(bodyParserMiddleware);
@@ -144,7 +148,7 @@ import {
   createCompressionMiddleware,
   csrfMiddleware,
   corsPresets,
-} from "reiatsu";
+} from "rupik";
 
 // Apply to all routes
 use(errorHandlerMiddleware); // Error handling
@@ -159,7 +163,7 @@ use(corsPresets.development()); // CORS
 ### Composable Middleware Stacks
 
 ```typescript
-import { compose } from "reiatsu";
+import { compose } from "rupik";
 
 // Create reusable stacks
 const authStack = compose(
@@ -201,7 +205,7 @@ import {
   escapeHtml,
   sanitizeFilename,
   sanitizeUrl,
-} from "reiatsu";
+} from "rupik";
 
 // Security headers (CSP, HSTS, X-Frame-Options, etc.)
 use(securityHeadersMiddleware);
@@ -243,7 +247,7 @@ router.get("/form", (ctx) => {
 ### Sanitization Utilities
 
 ```typescript
-import { escapeHtml, stripHtml, sanitizeFilename, sanitizeUrl } from "reiatsu";
+import { escapeHtml, stripHtml, sanitizeFilename, sanitizeUrl } from "rupik";
 
 escapeHtml('<script>alert("XSS")</script>');
 // → '&lt;script&gt;alert(&quot;XSS&quot;)&lt;/script&gt;'
@@ -260,7 +264,7 @@ sanitizeUrl('javascript:alert("XSS")');
 ### Response Compression
 
 ```typescript
-import { createCompressionMiddleware } from "reiatsu";
+import { createCompressionMiddleware } from "rupik";
 
 // Automatic gzip/Brotli compression
 use(
@@ -293,7 +297,7 @@ router.get("/data", (ctx) => {
 ### Response Caching
 
 ```typescript
-import { cache } from "reiatsu";
+import { cache } from "rupik";
 
 // Cache responses for 5 minutes
 router.get("/api/stats", cache(300), async (ctx) => {
@@ -312,7 +316,7 @@ import {
   StringValidator,
   NumberValidator,
   ArrayValidator,
-} from "reiatsu";
+} from "rupik";
 
 const userValidator = new ObjectValidator({
   name: new StringValidator()
@@ -339,7 +343,7 @@ router.post("/users", async (ctx) => {
 Built-in JWT authentication:
 
 ```typescript
-import { authMiddleware, signJWT, decodeJWT } from "reiatsu";
+import { authMiddleware, signJWT, decodeJWT } from "rupik";
 
 // Global authentication
 use(authMiddleware(process.env.JWT_SECRET!));
@@ -380,7 +384,7 @@ import {
   NotFoundError,
   AuthenticationError,
   AuthorizationError,
-} from "reiatsu";
+} from "rupik";
 
 // Global error handler (add first!)
 use(errorHandlerMiddleware);
@@ -427,7 +431,7 @@ import {
   createRateLimiter,
   authMiddleware,
   notFoundMiddleware,
-} from "reiatsu";
+} from "rupik";
 
 // 1. Error handling (first!)
 use(errorHandlerMiddleware);

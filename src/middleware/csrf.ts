@@ -65,7 +65,7 @@ interface CSRFContext extends Context {
  *
  * @example
  * ```typescript
- * import { createCSRFMiddleware } from "reiatsu";
+ * import { createCSRFMiddleware } from "rupik";
  *
  * // Use default settings
  * app.use(createCSRFMiddleware());
@@ -199,7 +199,7 @@ function timingSafeEqual(a: string, b: string): boolean {
  *
  * @example
  * ```typescript
- * import { csrfMiddleware } from "reiatsu";
+ * import { csrfMiddleware } from "rupik";
  *
  * app.use(csrfMiddleware);
  * ```
