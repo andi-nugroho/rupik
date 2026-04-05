@@ -4,9 +4,9 @@
 
 # Rupik
 
-![npm](https://img.shields.io/npm/v/rupik)
-![npm](https://img.shields.io/npm/dm/rupik)
-![GitHub stars](https://img.shields.io/github/stars/andi-nugroho/rupik?style=flat-square&color=ff69b4)
+[![npm](https://img.shields.io/npm/v/rupik)](https://www.npmjs.com/package/rupik)
+[![npm](https://img.shields.io/npm/dm/rupik)](https://www.npmjs.com/package/rupik)
+[![GitHub stars](https://img.shields.io/github/stars/andi-nugroho/rupik?style=flat-square&color=ff69b4)](https://github.com/andi-nugroho/rupik)
 ![Zero Dependencies](https://img.shields.io/badge/Dependencies-Zero-ff69b4?style=flat-square)
 ![TypeScript](https://img.shields.io/badge/TypeScript-First-ff69b4?style=flat-square)
 
