@@ -50,5 +50,8 @@
   },
   "peerDependencies": {
     "typescript": ">=4.5"
+  },
+  "dependencies": {
+    "reiatsu": "^1.3.0"
   }
 }
