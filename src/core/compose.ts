@@ -12,7 +12,7 @@ import { Middleware } from "../types/http";
  *
  * @example
  * ```typescript
- * import { compose } from "reiatsu";
+ * import { compose } from "rupik";
  *
  * // Create a reusable auth stack
  * const authStack = compose(

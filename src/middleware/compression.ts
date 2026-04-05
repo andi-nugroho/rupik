@@ -61,7 +61,7 @@ const defaultFilter = (contentType: string): boolean => {
  *
  * @example
  * ```typescript
- * import { createCompressionMiddleware } from "reiatsu";
+ * import { createCompressionMiddleware } from "rupik";
  *
  * // Use default settings
  * app.use(createCompressionMiddleware());

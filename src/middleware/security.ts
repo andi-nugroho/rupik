@@ -113,7 +113,7 @@ export interface SecurityHeadersOptions {
  *
  * @example
  * ```typescript
- * import { createSecurityHeadersMiddleware } from "reiatsu";
+ * import { createSecurityHeadersMiddleware } from "rupik";
  *
  * // Use default secure settings
  * app.use(createSecurityHeadersMiddleware());
@@ -244,7 +244,7 @@ export const createSecurityHeadersMiddleware = (
  *
  * @example
  * ```typescript
- * import { securityHeadersMiddleware } from "reiatsu";
+ * import { securityHeadersMiddleware } from "rupik";
  *
  * app.use(securityHeadersMiddleware);
  * ```
