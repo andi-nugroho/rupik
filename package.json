@@ -28,8 +28,6 @@
   "scripts": {
     "build": "tsc --build tsconfig.build.json && tsc-esm-fix dist && node fix-template-engine.cjs",
     "prepare": "npm run build",
-    "start": "tsx src/index.ts",
-    "dev": "tsx watch src/index.ts",
     "test": "vitest run",
     "test:watch": "vitest",
     "test:coverage": "vitest run --coverage"
